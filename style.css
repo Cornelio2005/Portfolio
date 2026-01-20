@@ -297,3 +297,43 @@ span{
         transform: translateY(0);
     }
 }
+.Projets h2 {
+   margin-bottom: 5rem;
+   text-align: center;
+}
+.Projets-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.Projets-container .projets-box{
+    flex: 1 1 30rem;
+    background: var(--snd-bg-color);
+    padding: 6rem 2rem 6rem;
+    border-radius: 2rem;
+    text-align : center;
+    border: 0.3rem solid var(--bg-color);
+    transition: 0.3s ease;
+}
+
+.Projets-container .projets-box:hover{
+    border: 0.3rem solid var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    transform: translateY(-10px);
+}
+.projets-box i{
+     font-size: 7rem;
+     color : var(--main-color);
+}
+
+.projets-box h3{
+    font-size: 2.6rem;
+}
+
+.projets-box p{
+    margin: 1rem 0 3rem;
+    font-size: 1.6rem;
+}
