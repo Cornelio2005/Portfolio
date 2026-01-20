@@ -180,3 +180,47 @@ span{
     box-shadow: 0 0 1.6rem;
     transform: translateY(-5px) var(--main-color);
 }
+
+.Apropos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: var(--snd-bg-color);
+}
+.Apropos-image img{
+    width: 28rem;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+    animation: floatImage 4s ease-in-out infinite;
+    transition: 0.4s ease;
+}
+.Apropos-image img:hover{
+    box-shadow: 0 0 25px var(--main-color), 
+                0 0 35px var(--main-color),
+                0 0 45px var(--main-color);
+}
+
+.heading{
+    font-size: 6rem;
+    text-align: left;
+}
+
+.Apropos-content {
+    padding : 0 4rem;
+}
+.Apropos-content h2{
+    text-align: left;
+    line-height: 1.2;
+}
+
+.Apropos-content h3{
+  
+    font-size: 3rem;
+   
+}
+.Apropos-content p{
+    margin: 2rem 0 3rem;
+    font-size: 1.6rem;
+}
