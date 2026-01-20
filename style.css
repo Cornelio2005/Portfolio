@@ -224,3 +224,76 @@ span{
     margin: 2rem 0 3rem;
     font-size: 1.6rem;
 }
+
+/* Section Atouts */
+.atouts {
+    background: var(--bg-color); /* On reste sur du blanc pour alterner avec la section précédente */
+}
+
+.atouts-container {
+    max-width: 80rem;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.atout-item {
+    background: var(--snd-bg-color);
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    border-left: 5px solid var(--main-color);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.atout-item[open] {
+    box-shadow: 0 5px 15px rgba(0, 168, 168, 0.2);
+}
+
+.atout-item summary {
+    font-size: 2.2rem;
+    font-weight: 600;
+    list-style: none; /* Cache la flèche par défaut du navigateur */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Création d'une flèche personnalisée */
+.atout-item summary::after {
+    content: '+';
+    color: var(--main-color);
+    font-size: 3rem;
+    transition: 0.3s ease;
+}
+
+.atout-item[open] summary::after {
+    content: '-';
+    transform: rotate(180deg);
+}
+
+.atout-detail {
+    margin-top: 1.5rem;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(0, 168, 168, 0.2);
+    animation: fadeIn 0.5s ease;
+}
+
+.atout-detail p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+/* Animation douce lors de l'ouverture */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
