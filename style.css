@@ -337,3 +337,54 @@ span{
     margin: 1rem 0 3rem;
     font-size: 1.6rem;
 }
+
+/*section contact*/
+.Contact {
+    background: var(--bg-color);
+}
+
+.Contact .heading{
+   
+    text-align: center;
+}
+
+.Contact h2 {
+    margin-bottom: 3rem;
+    color: var(--main-color);
+}
+.Contact form{
+    max-width: 80rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.Contact form .input-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Contact form .input-box input,
+.Contact form  textarea{
+    width: 100%;
+    padding:1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    border: 0.25rem solid var(--main-color);
+    border-radius: 0.8rem;
+    background: var(--bg-color);
+    margin: 0.7rem 0 ;
+    resize: none;
+   
+}
+
+.Contact form .input-box input{
+    width: 49%;
+    margin: 0.7rem 0.35rem;
+}
+
+.Contact form .btn{
+    margin-top: 2rem;
+}
+
+/*Section footer*/
